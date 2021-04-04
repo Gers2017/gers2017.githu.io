@@ -1,5 +1,199 @@
-<html>
-<body>
-  <h1>Welcome</h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Gers2017, Portfolio, Github" />
+    <meta name="description" content="Github page for personal purposes" />
+    <title>Gers2017</title>
+    <link rel="shortcut icon" href="WolfyLogo.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="logo" href="index.html">
+        <img src="/images/wolfy-logo.svg" alt="logo" />
+        <h2>Gers2017</h2>
+      </a>
+      <div class="mobile-navbar">
+        <div class="burger-btn">
+          <span class="burger"></span>
+        </div>
+        <nav class="navegation">
+          <a class="link" href="#projects">Projects</a>
+          <a class="link" href="#who-i-am">Who I am?</a>
+          <a class="link" href="#skills">Skills</a>
+        </nav>
+      </div>
+    </header>
+    <!-- hero -->
+    <section class="section page-wrap">
+      <div class="hero-container">
+        <div class="hero fade-left">
+          <div class="text-content">
+            <h1>Hi I'm Gerson</h1>
+            <h2>A person who likes to code and create stuff</h2>
+          </div>
+          <a href="#projects" class="arrow-btn">
+            <img
+              class="arrow-btn"
+              src="/images/ArrowButton.svg"
+              alt="down button"
+            />
+          </a>
+          <img class="wave" src="/images/Wave.svg" alt="wave" />
+          <img
+            class="semi-circle"
+            src="/images/SemiCircle.svg"
+            alt="semi circle"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="section projects-container" id="projects">
+      <div class="projects">
+        <div class="title">
+          <h2>My projects</h2>
+        </div>
+        <div class="project-showcase">
+          <div class="project-container">
+            <div class="project-nav">
+              <button
+                class="proj-btn active"
+                data-project="project1"
+                aria-label="Show firts project"
+              ></button>
+              <button
+                class="proj-btn"
+                data-project="project2"
+                aria-label="Show second project"
+              ></button>
+              <button
+                class="proj-btn"
+                data-project="project3"
+                aria-label="Show third project"
+              ></button>
+            </div>
+            <div class="project-cards-container">
+              <div id="project1" class="project-card">
+                <div class="left project-desc card-side active">
+                  <h3>Vscode theme</h3>
+                  <h2>Glitch theme</h2>
+                  <p>
+                    It's super cool project that I made only using javascript
+                    and node.js
+                  </p>
+                  <button class="btn" aria-label="view full project">
+                    <a
+                      target="blank"
+                      href="https://github.com/Gers2017/glitch-vscode-theme"
+                      >View full project</a
+                    >
+                  </button>
+                </div>
+                <div class="right card-side active"></div>
+              </div>
+              <!-- project 2 -->
+              <div id="project2" class="project-card">
+                <div class="left project-desc card-side">
+                  <h3>Game</h3>
+                  <h2>Robo astronauts</h2>
+                  <p>
+                    It's super cool project that I made only using javascript
+                    and node.js
+                  </p>
+                  <button class="btn" aria-label="view full project">
+                    <a
+                      href="https://github.com/Gers2017/Project-robo-astronauts-amonguys"
+                    >
+                      View full project
+                    </a>
+                  </button>
+                </div>
+                <div class="right card-side"></div>
+              </div>
+              <!-- project 3 -->
+              <div id="project3" class="project-card">
+                <div class="left project-desc card-side">
+                  <h3>coming soon</h3>
+                  <h2>???</h2>
+                  <p>Not available yet</p>
+                  <button class="btn" aria-label="view full project">
+                    ???
+                  </button>
+                </div>
+                <div class="right card-side"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- who i am -->
+    <section id="who-i-am" class="section container">
+      <div class="who-container page-wrap">
+        <h2 class="section-title">Who I am?</h2>
+        <article class="about-me">
+          <div class="text-container scroll-item fade-right">
+            <h2>Cats are cute</h2>
+            <p class="paragraph">
+              I'm a curious person. Someone who really enjoys learning new
+              things. I started programming thanks to game development. Since
+              then I kept learning by my own, you could say I'm a self taught
+              developer.
+            </p>
+          </div>
+          <img class="scroll-item fade-left" src="/images//cat.jpg" alt="cat" />
+        </article>
+        <!-- skills section -->
+
+        <div id="skills" class="details-section">
+          <details>
+            <summary>Skills</summary>
+            <div class="skill">
+              <h3>Languages I like and use</h3>
+              <ul class="list">
+                <li>Javascript</li>
+                <li>Typescript</li>
+                <li>C#</li>
+                <li>Python</li>
+              </ul>
+            </div>
+
+            <div class="skill">
+              <h3>Frameworks and libraries I use</h3>
+              <ul class="list">
+                <li>React js</li>
+                <li>Next js</li>
+                <li>Express js</li>
+                <li>Svelte</li>
+              </ul>
+            </div>
+
+            <div class="skill">
+              <h3>Tools and others</h3>
+              <ul class="list">
+                <li>Vscode</li>
+                <li>Figma</li>
+                <li>Git</li>
+                <li>Unity3d</li>
+                <li>Godot</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
